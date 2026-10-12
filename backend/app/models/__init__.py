@@ -1,0 +1,95 @@
+from app.models.user import User, UserRole
+from app.models.academic import Department, Course, CourseType, Enrollment, Attendance, InternalMark
+from app.models.exam import ExamSchedule, HallTicket
+from app.models.finance import FeeRecord, FeeCategory, FeeStatus
+from app.models.notice import Notice, NoticeCategory, NoticePriority
+from app.models.placement import PlacementDrive, PlacementApplication, ApplicationStatus
+from app.models.grievance import Grievance, GrievanceCategory, GrievanceStatus
+from app.models.ai import (
+    ChatSession,
+    ChatMessage,
+    SenderType,
+    QueryIntent,
+    Document,
+    DocumentChunk,
+    DocumentProcessingJob,
+    DocumentProcessingStatus,
+    DocumentCategory,
+)
+from app.models.admissions import AdmissionsEnquiry
+from app.models.system import (
+    EmailVerificationToken,
+    PasswordResetToken,
+    Notification,
+    NotificationPriority,
+    NotificationCategory,
+    AuditLog,
+    LoginActivity,
+)
+from app.models.data_ingestion import (
+    DataSource,
+    SourceType,
+    DataCategory,
+    ContentClassification,
+    CrawlJob,
+    CrawlPage,
+    DataReviewQueue,
+    DataImportJob,
+    DataImportError,
+    SyncLog,
+    DataProvenance,
+)
+
+__all__ = [
+    "User",
+    "UserRole",
+    "Department",
+    "Course",
+    "CourseType",
+    "Enrollment",
+    "Attendance",
+    "InternalMark",
+    "ExamSchedule",
+    "HallTicket",
+    "FeeRecord",
+    "FeeCategory",
+    "FeeStatus",
+    "Notice",
+    "NoticeCategory",
+    "NoticePriority",
+    "PlacementDrive",
+    "PlacementApplication",
+    "ApplicationStatus",
+    "Grievance",
+    "GrievanceCategory",
+    "GrievanceStatus",
+    "ChatSession",
+    "ChatMessage",
+    "SenderType",
+    "QueryIntent",
+    "Document",
+    "DocumentChunk",
+    "DocumentProcessingJob",
+    "DocumentProcessingStatus",
+    "DocumentCategory",
+    "AdmissionsEnquiry",
+    "EmailVerificationToken",
+    "PasswordResetToken",
+    "Notification",
+    "NotificationPriority",
+    "NotificationCategory",
+    "AuditLog",
+    "LoginActivity",
+    "DataSource",
+    "SourceType",
+    "DataCategory",
+    "ContentClassification",
+    "CrawlJob",
+    "CrawlPage",
+    "DataReviewQueue",
+    "DataImportJob",
+    "DataImportError",
+    "SyncLog",
+    "DataProvenance",
+]
+
